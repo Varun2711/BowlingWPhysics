@@ -15,7 +15,7 @@ public class BallController : MonoBehaviour
         ballRB = GetComponent<Rigidbody>();
 
         // add listener to the onSpacedPressed event
-        inputManager.onSpacePressed.AddListener(LaunchBall);
+        inputManager.OnSpacePressed.AddListener(LaunchBall);
     }
 
     private void LaunchBall()

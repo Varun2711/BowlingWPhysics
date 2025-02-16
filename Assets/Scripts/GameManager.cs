@@ -49,5 +49,6 @@ public class GameManager : MonoBehaviour
     {
         score++;
         scoreText.text = $"Score: {score}";
+        Debug.Log(score);
     }
 }

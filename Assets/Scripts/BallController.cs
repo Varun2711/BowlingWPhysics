@@ -29,6 +29,8 @@ public class BallController : MonoBehaviour
         isBallLaunched = false;
         ballRB.isKinematic = true;
         launchIndicator.gameObject.SetActive(true);
+        launchIndicator.gameObject.transform.localPosition = new Vector3(0, 0, 2);
+        launchIndicator.gameObject.transform.localRotation = new Quaternion(0, -90, 0, 0);
         transform.parent = ballAnchor;
         transform.localPosition = Vector3.zero;
     }
